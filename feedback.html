@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Feedback Form</h1>
+  
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date">
+
+  <label for="time">Time:</label>
+  <input type="text" id="time" name="time">
+
+  <label for="parent-name">Parent Name:</label>
+  <input type="text" id="parent-name" name="parent-name">
+
+  <label for="feedback">What you like about this faculty:</label>
+  <textarea id="feedback" name="feedback"></textarea>
+
+  <label for="positive">Positive feedback for Auslang:</label>
+  <textarea id="positive" name="positive"></textarea>
+
+  <label for="negative">Negative Feedback:</label>
+  <textarea id="negative" name="negative"></textarea>
+
+  <label for="critical">Critical and constructive feedback for Teacher:</label>
+  <textarea id="critical" name="critical"></textarea>
+
+  <label for="concerns">Specific concerns & issues:</label>
+  <textarea id="concerns" name="concerns"></textarea>
+
+  <label for="impact">Impact on student/or student progress:</label>
+  <textarea id="impact" name="impact"></textarea>
+
+  <label for="improve">Areas Needs to improve:</label>
+  <textarea id="improve" name="improve"></textarea>
+
+  <label for="ratings">Teacher Ratings:</label>
+  <textarea id="ratings" name="ratings"></textarea>
+
+  <label for="thank-you">Thank You:</label>
+  <textarea id="thank-you" name="thank-you"></textarea>
+
+  <button type="submit">Submit Feedback</button>
+</div>
+
+</body>
+</html>

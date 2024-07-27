@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback and Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Feedback and Support</h1>
+        <nav>
+            <a href="feedback.html">Feedback</a> | 
+            <a href="#support-section">Support</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Feedback Section -->
+        <section id="feedback-section">
+            <h2>Provide Feedback</h2>
+            <form id="feedbackForm">
+                <label for="feedbackType">Type of Feedback:</label>
+                <select id="feedbackType" name="feedbackType">
+                    <option value="Bug Report">Bug Report</option>
+                    <option value="Feature Request">Feature Request</option>
+                    <option value="General Feedback">General Feedback</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="contactInfo">Contact Information (optional):</label>
+                <input type="text" id="contactInfo" name="contactInfo">
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <!-- Help and Support Section -->
+        <section id="support-section">
+            <h2>Help and Support</h2>
+            <div id="faq-section">
+                <h3>FAQs</h3>
+                <ul>
+                    <li><a href="#account">Account Management</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#troubleshooting">Troubleshooting</a></li>
+                </ul>
+                <div id="faq-answers">
+                    <h4 id="account">Account Management</h4>
+                    <p>How do I manage my account?</p>
+                    <p>Here you can manage your account settings and preferences.</p>
+
+                    <h4 id="features">Features</h4>
+                    <p>How do I use the new feature?</p>
+                    <p>This section explains how to use the new features of the application.</p>
+
+                    <h4 id="troubleshooting">Troubleshooting</h4>
+                    <p>What should I do if the app crashes?</p>
+                    <p>Here are some steps to troubleshoot common issues.</p>
+                </div>
+            </div>
+
+            <div id="contact-support">
+                <h3>Contact Support</h3>
+                <form id="supportForm">
+                    <label for="supportMessage">Message:</label>
+                    <textarea id="supportMessage" name="supportMessage" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="feedback-support.js"></script>
+</body>
+</html>
